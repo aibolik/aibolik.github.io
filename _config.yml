@@ -1,0 +1,26 @@
+# Site settings
+title: Aibol Kussain. Personal blog
+email: kairkanuly@gmail.com
+description: Aibol Kussain's Personal Blog
+baseurl: ""
+url: "http://aibolik.github.io"
+
+author:
+  name     : 'Aibol Kussain'
+  email    : kairkanuly@gmail.com
+  url      : http://aibolik.github.io
+  facebook : http://facebook.com/aib0lik
+  twitter  : http://twitter.com/aibolik_
+  instagram: http://instagram.com/aibolik_
+  github   : http://github.com/aibolik
+
+github: https://github.com/aibolik
+google_analytics: UA-52446115-1
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Build settings
+markdown  : kramdown
+permalink : /:title/
