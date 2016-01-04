@@ -275,12 +275,20 @@
     -moz-transition: all .2s ease-in;
   }
 
+  a:hover i.fa-github {
+    background-color: #3B3B3B;
+    color: #fff;
+  }
   a:hover i.fa-facebook {
     background-color: #3A5897;
     color: #fff;
   }
   a:hover i.fa-twitter {
     background-color: #00ABEC;
+    color: #fff;
+  }
+  a:hover i.fa-instagram {
+    background-color: #18587E;
     color: #fff;
   }
 }
