@@ -29,7 +29,7 @@ By the time I write this page, I am motivated and encouraged by 2 people:
 
 Recently, I read Zuckerberg's Letter to His Daughter. And I really liked everything in his letter. His ideas, his vision, his missions and goals, everything is true and great. What we really meant to do. I recommend everyone to read this letter. [Take it here][linkToLetter]{:target="_blank"}.
  
-And about Derek Sivers. He is also a great man, and his visions and goals are clear. He has interesting story behind, and shares it with people. So you can see watch his 40-minute speech, that is his best talk he has ever done(in his opinion) [here][DStalk]{:target="_blank"}.
+And about Derek Sivers. He is also a great man, and his visions and goals are clear. He has interesting story behind, and shares it with people. So you can watch his 40-minute speech, that is his best talk he has ever done(in his opinion) [here][DStalk]{:target="_blank"}.
 
 That's it. If you want to contact me please write to [kairkanuly@gmail.com][mailto]. Or phone me to [+7 702 424 64 92][phone].
 
