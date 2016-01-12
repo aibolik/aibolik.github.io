@@ -197,6 +197,15 @@
     max-width: 100%;
     vertical-align: middle;
   }
+
+  iframe {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 15px #222;
+    width: 100%;
+    vertical-align: middle;
+  }
 }
 
 .single {
