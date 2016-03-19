@@ -35,7 +35,7 @@ That's it. If you want to contact me please write to [kairkanuly@gmail.com][mail
 
 Thank you for reading. If you like it, stay up to date by [subscribing to RSS feed][rss].
 
-[img]: {{ site.baseurl }}/images/me.JPG
+[img]: {{ site.baseurl }}/images/me.jpg
 [sdu]: http://sdu.edu.kz
 [IS]: http://is.eng.sdu.edu.kz/en
 [linkToLetter]: {{ site.baseurl }}/assets/zuckerbergs_letter_for_daughter.docx
