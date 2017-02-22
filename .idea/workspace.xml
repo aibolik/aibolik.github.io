@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c228bcd4-24ec-4829-8e1c-b8944ac750e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md" afterPath="$PROJECT_DIR$/_posts/2017-02-21-how-i-decided-to-go-freelancing.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,31 +18,8 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2016-04-19-how-to-create-chrome-extension-in-5-minutes.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-04-19-how-to-create-chrome-extension-in-5-minutes.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2329">
-                <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="62" />
-                <folding>
-                  <marker date="1487778079262" expanded="true" signature="2975:2990" ph="..." />
-                  <marker date="1487778079262" expanded="true" signature="2991:3725" ph="..." />
-                  <marker date="1487778079262" expanded="false" signature="3008:3025" ph="..." />
-                  <marker date="1487778079262" expanded="true" signature="3074:3218" ph="..." />
-                  <marker date="1487778079262" expanded="true" signature="3253:3401" ph="..." />
-                  <marker date="1487778079262" expanded="true" signature="3436:3588" ph="..." />
-                  <marker date="1487778079262" expanded="false" signature="3610:3621" ph="..." />
-                  <marker date="1487778079262" expanded="true" signature="4323:4862" ph="{...}" />
-                  <marker date="1487778079262" expanded="true" signature="4836:4858" ph="{&quot;code&quot;: execCode...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-02-22-how-i-decided-to-go-freelancing.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md">
+      <file leaf-file-name="2017-02-21-how-i-decided-to-go-freelancing.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-02-21-how-i-decided-to-go-freelancing.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="34">
@@ -195,12 +172,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487778198913</updated>
-      <workItem from="1487778200513" duration="3390000" />
+      <workItem from="1487778200513" duration="3544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3390000" />
+    <option name="totallyTimeSpent" value="3544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -276,7 +253,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-21-how-i-decided-to-go-freelancing.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="34">
