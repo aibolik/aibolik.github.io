@@ -17,7 +17,7 @@ _After a year_, I started taking projects for freelance. They were small project
   
 _In 2016_, one company invited me to position of Android Developer. The company was [Mars Studio][marsstudio] - they develop mobile applications, mostly for other Businesses(B2B). After a month, I was promoted to Lead Android Developer. I had more responsibility and I liked it. But those days I really wanted to be free, and start own business, **become an entrepreneur**. I quit a job, after I finished last application and started building own business. 
  
- I had my ups and downs and now I almost lost everything. Entrepreneur inside me did not let me go to work, and work for someone. Now I start to understand that I want to be an expert in one field. I am young and everything is ahead. But now, I do not want to stay in one place. I want to move forward, so _Freelancing_ is like freedom for me where I can get more experience in interesting field. I chose to work for foreign companies, where I can make a real value for company and for customers of company. My selection was **TopTal** because I strongly believe I am talented developer, who deserves to be among top talents. 
+ I had my ups and downs and now I almost lost everything. Entrepreneur inside me did not let me go to work, and work for someone. Now I start to understand that I want to be an expert in one field. I am young and everything is ahead. But now, I do not want to stay in one place. I want to move forward, so _Freelancing_ is like freedom for me where I can get more experience in interesting field. I chose to work for foreign companies, where I can make a real value for company and for customers of company. My selection was **TopTal** because I strongly believe I am talented developer, who deserves to be among top talents. That is the reason I want to join to [Toptal Mobile app engineering network][toptalapp].
    
  _Anyway_, I have just applied for TopTal, and tomorrow I am having an online meeting. I really like to get in and become one of top developers who work there.
  
@@ -31,3 +31,4 @@ _In 2016_, one company invited me to position of Android Developer. The company 
 [hanness]: http://hannesdorfmann.com
 [dmitro]: http://www.dmytrodanylyk.com/
 [marsstudio]: http://mars.studio/
+[toptalapp]: https://www.toptal.com/app
