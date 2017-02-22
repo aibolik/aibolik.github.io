@@ -4,6 +4,7 @@ email: kairkanuly@gmail.com
 description: Aibol Kussain's Personal Blog
 baseurl: ""
 url: "http://aibolik.github.io"
+future: true
 
 author:
   name     : 'Aibol Kussain'
