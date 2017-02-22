@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c228bcd4-24ec-4829-8e1c-b8944ac750e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md" afterPath="$PROJECT_DIR$/_posts/2017-02-21-how-i-decided-to-go-freelancing.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-02-21-how-i-decided-to-go-freelancing.md" afterPath="$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +17,8 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2017-02-21-how-i-decided-to-go-freelancing.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-02-21-how-i-decided-to-go-freelancing.md">
+      <file leaf-file-name="2017-02-22-how-i-decided-to-go-freelancing.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="34">
@@ -172,12 +171,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487778198913</updated>
-      <workItem from="1487778200513" duration="3544000" />
+      <workItem from="1487778200513" duration="3584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3544000" />
+    <option name="totallyTimeSpent" value="3584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -253,7 +252,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-21-how-i-decided-to-go-freelancing.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-22-how-i-decided-to-go-freelancing.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="34">
