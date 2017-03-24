@@ -1,17 +1,22 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    {% include head.html %}
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  </head>
-  <body class="{{ page.slug }}">
-    <main class="main">
-      {% include header.html %}
-      {{ content }}
-      {% include footer.html %}
-    </main>
-  </body>
+{% include head.html %}
+
+<body data-spy="scroll" data-target="#main-navbar">
+<div class="page-loader"></div>  <!-- Display loading image while page loads -->
+<div class="body">
+
+{% include header.html %}
+
+	{{ content }}
+
+{% include footer.html %}
+
+</div>
+
+{% include plugins.html %}
+
+</body>
+
 </html>
