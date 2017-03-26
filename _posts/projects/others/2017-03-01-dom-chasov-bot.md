@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	DomChasovBat
+title:	DomChasovBot
 subtitle: Telegram Bot
 category: project
 image: bot_dom_chasov.jpg
