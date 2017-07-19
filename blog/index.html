@@ -1,0 +1,93 @@
+--- 
+layout: blog 
+---
+<!-- Begin text carousel intro section -->
+<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url({{site.dir}}/img/slider-bg.jpg);">
+    <div class="container">
+        <div class="caption text-center text-white" data-stellar-ratio="0.7">
+            <div id="owl-intro-text" class="owl-carousel">
+                <div class="item">
+                    <h1>My Tech blog</h1>
+                    <p><span class="my-typed"></span></p>
+                    <div class="extra-space-l"></div>
+                    <a class="btn btn-blank page-scroll" href="#blog-items" target="_blank" role="button">Read!</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.caption -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- End text carousel intro section -->
+<!-- Begin Services -->
+<section id="blog-items" class="page" style="background-color: #ebebeb;">
+    <!-- Begin page header-->
+    <div class="container">
+        <div class="row">
+        {% assign posts = site.posts | where:'category', 'blog' %}
+        {% for post in posts %}
+    		{% include post.html %}
+  		{% endfor %}
+        </div>
+    </div>
+    <!-- End page header-->
+</section>
+<!-- End Services -->
+<!-- Begin contact section -->
+<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url({{site.dir}}/img/map-bg.jpg);">
+    <div class="cover"></div>
+    <!-- Begin page header-->
+    <div class="page-header-wrapper">
+        <div class="container">
+            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                <h2>Contact me</h2>
+                <div class="devider"></div>
+                <p class="subtitle">need my help? feel free to contact me</p>
+            </div>
+        </div>
+    </div>
+    <!-- End page header-->
+    <div class="contact wow bounceInRight" data-wow-delay="0.4s">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contact-info">
+                        <h4>My Location</h4>
+                        <ul class="contact-address">
+                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; Sayran District, 9
+                                <br>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Almaty, Kazakhstan, 050000
+                            </li>
+                            <li><i class="fa fa-phone"></i>&nbsp; +7 (702) 424 64 92</li>
+                            <li><i class="fa fa-envelope"></i> kairkanuly@gmail.com</li>
+                            <li><i class="fa fa-skype"></i> aybol.kk</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contact-form">
+                        <h4>Write to us</h4>
+                        <form role="form" action="https://formspree.io/aibolikdev@gmail.com" method="POST">
+                            <div class="form-group">
+                                <input name="name" type="text" class="form-control input-lg" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="email" type="email" class="form-control input-lg" placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="subject" type="text" class="form-control input-lg" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+</section>
+<!-- End contact section -->
