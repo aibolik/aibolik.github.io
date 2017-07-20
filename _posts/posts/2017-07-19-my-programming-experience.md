@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	My Programming Experience
+category: blog
 ---
 
 Hi, there! I will begin with explaining how I started my way in programming.
