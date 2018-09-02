@@ -35,27 +35,27 @@ The project is deployed freely on Netlify [here](https://elastic-bhabha-78ee1e.n
 ## Features
 
 The list of features I want to have to be ready to replace current website:
-- Implemented design as in my XD project(Will share later)
-- Responsive Design(mobile and tablet+)
-- Integration with Contenful
-- Blog Articles built from Contenful
-- Articles supporting rich markdown(with code highlighting)
-- About page
-- Sign Up form for Newsletters
+- [ ] Implemented design as in my XD project(Will share later)
+- [ ] Responsive Design(mobile and tablet+)
+- [ ] Integration with Contenful
+- [ ] Blog Articles built from Contenful
+- [ ] Articles supporting rich markdown(with code highlighting)
+- [ ] About page
+- [ ] Sign Up form for Newsletters
 
 Other features those are not critical for release:
-- Projects page
-- Newsletters page
-- Courses page
-- Disqus integration
-- SEO optimization
-- What I've learnt section
-- Division of exploring posts by category/tags
-- Post views
-- Post upvoting
-- Archive of posts
-- RSS feed
-- Suggested/Related posts
+- [ ] Projects page
+- [ ] Newsletters page
+- [ ] Courses page
+- [ ] Disqus integration
+- [ ] SEO optimization
+- [ ] What I've learnt section
+- [ ] Division of exploring posts by category/tags
+- [ ] Post views
+- [ ] Post upvoting
+- [ ] Archive of posts
+- [ ] RSS feed
+- [ ] Suggested/Related posts
 
 ## Configuration
 
