@@ -4,8 +4,9 @@ import Helmet from 'react-helmet'
 import styled, { ThemeProvider, injectGlobal } from 'styled-components'
 import normalize from 'styled-normalize'
 import { media } from '../helpers/style-helper'
-
 import Navigation from '../components/Navigation'
+import 'typeface-roboto-slab'
+import 'typeface-merriweather'
 
 injectGlobal`
   ${normalize}
@@ -33,6 +34,9 @@ const Container = styled.div`
 `
 
 const ContentContainer = styled.div`
+  padding: 16px;
+  color: ${props => props.theme.foreground};
+  
   ${media.tablet`
     position: relative;
     left: 320px;
