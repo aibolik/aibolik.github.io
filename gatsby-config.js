@@ -1,4 +1,8 @@
+console.log('ENV1', process.env);
+
 require('dotenv').config()
+
+console.log('ENV2', process.env);
 
 const { CONTENFUL_SPACE_ID: spaceId, CONTENTFUL_DELIVERY_TOKEN: accessToken } = process.env
 
