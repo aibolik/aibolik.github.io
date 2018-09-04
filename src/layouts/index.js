@@ -40,6 +40,7 @@ const ContentContainer = styled.div`
   ${media.tablet`
     position: relative;
     left: 320px;
+    width: calc(100% - 352px);
   `}
 `
 
