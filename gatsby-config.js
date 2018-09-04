@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const { CONTENFUL_SPACE_ID: spaceId, CONTENTFUL_DELIVERY_TOKEN: accessToken } = process.env
+const { CONTENTFUL_SPACE_ID: spaceId, CONTENTFUL_DELIVERY_TOKEN: accessToken } = process.env
 
 if (!spaceId || !accessToken) {
   throw new Error(
