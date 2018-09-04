@@ -6,6 +6,11 @@ console.log('ENV2', process.env);
 
 const { CONTENFUL_SPACE_ID: spaceId, CONTENTFUL_DELIVERY_TOKEN: accessToken } = process.env
 
+console.log('spaceId', process.env.CONTENFUL_SPACE_ID);
+console.log('accessToken', process.env.CONTENTFUL_DELIVERY_TOKEN);
+console.log('SPACE_ID', spaceId);
+console.log('ACESS TOKEN', accessToken);
+
 if (!spaceId || !accessToken) {
   throw new Error(
     'Contentful spaceId and the delivery token need to be provided.'
