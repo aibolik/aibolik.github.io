@@ -4,7 +4,6 @@ import { media } from '../../helpers/style-helper'
 
 const HeroContainer = styled.div`
   position: relative;
-  margin: -16px -16px 0;
 
   color: ${props => props.theme.lightText};
 `
@@ -39,8 +38,8 @@ const ImageOverlay = styled.span`
 const TextContainer = styled.div`
   position: absolute;
   top: 0;
-  left: 16px;
   bottom: 0;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
