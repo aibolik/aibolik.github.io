@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Btn = styled.button`
   box-sizing: border-box;
   height: 42px;
+  padding: 0 16px;
   border-radius: 4px;
   border: none;
 

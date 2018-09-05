@@ -14,6 +14,10 @@ const ImageContainer = styled.div`
   padding-top: 75%;
   background: red;
   position: relative;
+
+  ${media.tablet`
+    padding-top: 56.25%;
+  `}
 `
 
 const Img = styled.img`
@@ -39,13 +43,18 @@ const TextContainer = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
-  padding: 16px;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   ${media.tablet`
     width: 60%;
+    padding: 2em;
+  `}
+
+  ${media.desktop`
+    padding: 3em;
   `}
 `
 

@@ -12,6 +12,7 @@ const IndexPage = () => (
       excerpt={'My name is Aibol, and I am passionate about FrontEnd, JavaScript and especially ReactJS. I write about things those seem interesting to me, so I hope you can get some useful stuff for yourself!'}
     />
     <BlogPost />
+    <BlogPost />
   </div>
 )
 
