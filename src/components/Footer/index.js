@@ -5,7 +5,7 @@ import GithubIcon from '../SocialIcons/Github'
 import Twitter from '../SocialIcons/Twitter'
 import { media } from '../../helpers/style-helper'
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
   height: 45px;
   line-height: 40px;
   padding: 0 16px;

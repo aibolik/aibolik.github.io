@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import CalendarIcon from './calendar.svg'
 
-const BlogContainer = styled.div`
+const BlogContainer = styled.article`
   line-height: 1.5;
 `
 
@@ -11,7 +11,7 @@ const Title = styled.h2`
   line-height: 1.2;
 `
 
-const DateContainer = styled.div`
+const DateContainer = styled.time`
   display: flex;
   font-family: 'Merriweather', Georgia, Arial;
   font-style: italic;

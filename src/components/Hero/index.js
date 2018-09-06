@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../../helpers/style-helper'
 
-const HeroContainer = styled.div`
+const HeroContainer = styled.section`
   position: relative;
 
   color: ${props => props.theme.lightText};
@@ -17,6 +17,10 @@ const ImageContainer = styled.div`
 
   ${media.tablet`
     padding-top: 56.25%;
+  `}
+
+  ${media.desktop`
+    padding-top: 45%;
   `}
 `
 
