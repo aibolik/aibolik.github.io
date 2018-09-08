@@ -1,15 +1,20 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import BlogPost from '../components/BlogPost'
+import GatsbyLink from 'gatsby-link'
+import BlogPreview from '../components/BlogPreview'
 import Hero from '../components/Hero'
 import HeroImage from '../assets/hero.jpg'
 import styled from 'styled-components'
 
 const PostsContainer = styled.section`
-  padding: 16px;
+  padding: 16px 16px 46px;
 `
 
-const IndexPage = () => (
+const Link = styled(GatsbyLink)`
+  color: inherit;
+  text-decoration: none;
+`
+
+const IndexPage = ({ data }) => (
   <main>
     <Hero 
       heroImage={HeroImage} 
@@ -17,10 +22,42 @@ const IndexPage = () => (
       excerpt={'My name is Aibol, and I am passionate about FrontEnd, JavaScript and especially ReactJS. I write about things those seem interesting to me, so I hope you can get some useful stuff for yourself!'}
     />
     <PostsContainer>
-      <BlogPost />
-      <BlogPost />
+      {
+        data.allContentfulBlogPost.edges.map(({ node }) => (
+          <Link to={`/blog/${node.slug}`} key={node.id}><BlogPreview {...node} /></Link>
+          )
+        )
+      }
     </PostsContainer>
   </main>
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allContentfulBlogPost(
+      filter: { node_locale: {eq: "en-US"} },
+      sort: { fields: [publishDate], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          title
+          slug
+          publishDate(formatString: "x")
+          content {
+            __typename
+            ... on ContentfulBlogPostCopy {
+              copy {
+                childMarkdownRemark {
+                  excerpt(pruneLength: 250)
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+`

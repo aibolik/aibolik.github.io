@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import CalendarIcon from './calendar.svg'
+import moment from 'moment'
 
 const BlogContainer = styled.article`
   line-height: 1.5;
@@ -25,17 +26,17 @@ const Img = styled.img`
   opacity: .34;
 `
 
-const BlogPost = props => (
+const BlogPreview = ({ title, slug, content, publishDate }) => (
   <BlogContainer>
-    <Title>My Programming Experience</Title>
+    <Title>{title}</Title>
     <p>
-      Hi, there! I will begin with explaining how I started my way in programming. In the far 2008th, I entered to Kazakh-Turkish High School for gifted students. All Kazakh-Turkish Schools in our country make a big emphasis on subject...
+      {content.filter(({ __typename }) => __typename === 'ContentfulBlogPostCopy')[0].copy.childMarkdownRemark.excerpt}
     </p>
     <DateContainer>
       <Img src={CalendarIcon} />
-      Published on 19th of July
+      Published on&nbsp;<time dateTime={publishDate}>{moment(parseInt(publishDate)).format('Do of MMMM, YYYY')}</time>
     </DateContainer>
   </BlogContainer>
 )
 
-export default BlogPost
+export default BlogPreview
