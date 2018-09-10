@@ -13,7 +13,19 @@ const Nav = styled.nav`
     top: 0;
     
     height: 100vh;
+    width: 280px;
+
+    .twitter-follow-button {
+      display: none;
+    }
+  `}
+
+  ${media.desktop`
     width: 320px;
+
+    .twitter-follow-button {
+      display: block;
+    }
   `}
 `
 

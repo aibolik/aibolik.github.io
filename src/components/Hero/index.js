@@ -1,6 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { media } from '../../helpers/style-helper'
+import PublishDate from '../PublishDate'
 
 const HeroContainer = styled.section`
   position: relative;
@@ -62,23 +64,7 @@ const TextContainer = styled.div`
   `}
 `
 
-const Title = styled.h2`
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 4px;
-    background: white;
-    bottom: -12px;
-    left: 0;
-
-    ${media.tablet`
-      width: 35px;
-    `}
-  }
-
+const Title = styled.h1`
   ${media.tablet`
     font-size: 3em;
     margin-bottom: .2em;
@@ -88,13 +74,34 @@ const Title = styled.h2`
 const PageExcerpt = styled.p`
   line-height: 1.5;
   margin: 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: white;
+    top: -10px;
+    left: 0;
+
+    ${media.tablet`
+      width: 35px;
+      height: 6px;
+      top: -18px;
+    `}
+  }
   
   ${media.tablet`
     margin-top: 1.2em;
   `}
 `
 
-const Hero = ({ heroImage, title, excerpt }) => (
+const Time = styled.time`
+
+`
+
+const Hero = ({ heroImage, title, excerpt, publishDate }) => (
   <HeroContainer>
     <ImageContainer>
       <Img src={heroImage} />
@@ -102,9 +109,18 @@ const Hero = ({ heroImage, title, excerpt }) => (
     </ImageContainer>
     <TextContainer>
       <Title>{title}</Title>
-      <PageExcerpt>{excerpt}</PageExcerpt>
+      {excerpt && <PageExcerpt>{excerpt}</PageExcerpt>}
+      {publishDate && 
+        <PublishDate publishDate={publishDate} light />
+      }
     </TextContainer>
   </HeroContainer>
 )
+
+Hero.propTypes = {
+  heroImage: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  excerpt: PropTypes.string
+}
 
 export default Hero

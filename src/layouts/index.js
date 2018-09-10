@@ -35,10 +35,16 @@ const Container = styled.div`
   `}
 `
 
-const ContentContainer = styled.div`
+const ContentContainer = styled.main`
   color: ${props => props.theme.foreground};
   
   ${media.tablet`
+    position: relative;
+    left: 280px;
+    width: calc(100% - 280px);
+  `}
+
+  ${media.desktop`
     position: relative;
     left: 320px;
     width: calc(100% - 320px);

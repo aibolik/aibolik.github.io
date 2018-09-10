@@ -15,9 +15,9 @@ const Link = styled(GatsbyLink)`
 `
 
 const IndexPage = ({ data }) => (
-  <main>
-    <Hero 
-      heroImage={HeroImage} 
+  <section>
+    <Hero
+      heroImage={HeroImage}
       title={'Hi, there!'}
       excerpt={'My name is Aibol, and I am passionate about FrontEnd, JavaScript and especially ReactJS. I write about things those seem interesting to me, so I hope you can get some useful stuff for yourself!'}
     />
@@ -25,11 +25,11 @@ const IndexPage = ({ data }) => (
       {
         data.allContentfulBlogPost.edges.map(({ node }) => (
           <Link to={`/blog/${node.slug}`} key={node.id}><BlogPreview {...node} /></Link>
-          )
+        )
         )
       }
     </PostsContainer>
-  </main>
+  </section>
 )
 
 export default IndexPage
