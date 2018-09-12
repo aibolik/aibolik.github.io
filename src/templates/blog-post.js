@@ -4,6 +4,7 @@ import ImageEmbed from '../components/ImageEmbed'
 import HeroImage from '../assets/hero.jpg'
 import styled from 'styled-components'
 import { media } from '../helpers/style-helper'
+import 'prismjs/themes/prism-tomorrow.css'
 
 const StyledContent = styled.section`
   padding: 0 16px 40px;
@@ -11,6 +12,22 @@ const StyledContent = styled.section`
   font-family: 'Merriweather', Helvetica, Arial, serif;
   font-size: 1.2em;
   line-height: 1.4;
+
+  .gatsby-highlight {
+    font-size: .8em;
+  }
+
+  blockquote {
+    margin: 1em 40px 1em 1em;
+    padding-left: 1em;
+    border-left: 4px solid rgba(33, 33, 33, .77);
+    
+    font-style: italic;
+  }
+
+  twitterwidget {
+    margin: 10px auto;
+  }
 
   ${media.tablet`
     padding: 0 16px 40px 32px;
