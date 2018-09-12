@@ -35,13 +35,16 @@ The project is deployed freely on Netlify [here](https://elastic-bhabha-78ee1e.n
 ## Features
 
 The list of features I want to have to be ready to replace current website:
-- [ ] Implemented design as in my XD project(Will share later)
-- [ ] Responsive Design(mobile and tablet+)
-- [ ] Integration with Contenful
-- [ ] Blog Articles built from Contenful
-- [ ] Articles supporting rich markdown(with code highlighting)
+- [x] Implemented design as in my XD project(Will share later)
+- [x] Responsive Design(mobile and tablet+)
+- [x] Integration with Contenful
+- [x] Blog Articles built from Contenful
+- [x] Articles supporting rich markdown
+- [x] Syntax highlighting
 - [ ] About page
 - [ ] Sign Up form for Newsletters
+- [ ] Google Analytics
+- [ ] CI integration(CirlceCI or other) to deploy to GitHub pages
 
 Other features those are not critical for release:
 - [ ] Projects page
