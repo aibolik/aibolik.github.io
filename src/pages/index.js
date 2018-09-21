@@ -37,7 +37,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexQuery {
     allContentfulBlogPost(
-      filter: { node_locale: {eq: "en-US"} },
+      filter: { node_locale: {eq: "en-US"}, hidden:{eq: false}},
       sort: { fields: [publishDate], order: DESC }
     ) {
       edges {

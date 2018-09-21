@@ -41,8 +41,8 @@ The list of features I want to have to be ready to replace current website:
 - [x] Blog Articles built from Contenful
 - [x] Articles supporting rich markdown
 - [x] Syntax highlighting
-- [ ] About page
-- [ ] Sign Up form for Newsletters
+- [x] About page
+- [x] Sign Up form for Newsletters
 - [x] Google Analytics - need to check on prod
 - [ ] CI integration(CirlceCI or other) to deploy to GitHub pages
 - [x] SiteMap

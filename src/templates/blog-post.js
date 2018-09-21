@@ -6,7 +6,8 @@ import styled from 'styled-components'
 import { media } from '../helpers/style-helper'
 import 'prismjs/themes/prism-tomorrow.css'
 
-const StyledContent = styled.section`
+// Temporarily
+export const StyledContent = styled.section`
   padding: 0 16px 40px;
 
   font-family: 'Merriweather', Helvetica, Arial, serif;

@@ -17,6 +17,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 node {
                   title
                   slug
+                  hidden
                 }
               }
             }
@@ -30,7 +31,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         const posts = result.data.allContentfulBlogPost.edges
 
-        posts.forEach(({ node: { slug }}) => {
+        posts.filter(post => post.hidden === false).forEach(({ node: { slug }}) => {
           createPage({
             path: `/blog/${slug}`,
             component: blogPost,

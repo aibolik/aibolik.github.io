@@ -161,9 +161,9 @@ class Navigation extends Component {
           </NavigationClose>
           <Sections open={this.state.open}>
             <LinkItem to='/' exact>Blog</LinkItem>
-            <LinkItem to='/newsletters'>Newsletters</LinkItem>
-            <LinkItem to='/projects'>Projects</LinkItem>
-            <LinkItem to='/courses'>Courses</LinkItem>
+            {/* <LinkItem to='/newsletters'>Newsletters</LinkItem> */}
+            {/* <LinkItem to='/projects'>Projects</LinkItem> */}
+            {/* <LinkItem to='/courses'>Courses</LinkItem> */}
             <LinkItem to='/about'>About</LinkItem>
           </Sections>
         </NavigationContainer>
