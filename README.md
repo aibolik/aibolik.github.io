@@ -43,8 +43,9 @@ The list of features I want to have to be ready to replace current website:
 - [x] Syntax highlighting
 - [ ] About page
 - [ ] Sign Up form for Newsletters
-- [ ] Google Analytics
+- [x] Google Analytics - need to check on prod
 - [ ] CI integration(CirlceCI or other) to deploy to GitHub pages
+- [x] SiteMap
 
 Other features those are not critical for release:
 - [ ] Projects page
@@ -59,6 +60,8 @@ Other features those are not critical for release:
 - [ ] Archive of posts
 - [ ] RSS feed
 - [ ] Suggested/Related posts
+- [ ] Web App Manifest - using `gatsby-plugin-manifest`
+- [ ] PWA - using `gatsby-plugin-offline`
 
 ## Configuration
 

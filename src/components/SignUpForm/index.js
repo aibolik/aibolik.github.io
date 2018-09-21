@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Button from '../Button'
+import { LoadableButton } from '../Button'
 import Envelope from './envelope.svg'
 import { media } from '../../helpers/style-helper'
 
@@ -40,27 +40,76 @@ const Input = styled.input`
   height: 32px;
   padding: 6px 6px 6px 44px;
   margin-right: 12px;
+  max-width: calc(100% - 160px);
 
   ${media.tablet`
     width: 300px;
   `}
 `
 
+const SIGN_UP_URL = 'https://f38w5n63n3.execute-api.us-east-1.amazonaws.com/signUp/processSIgnUpFormRequest'
+
 class SignUp extends Component {
 
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      email: '',
+      state: 'initial'
+    }
+
+    this.handleInputChange = this.handleInputChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleInputChange(event) {
+    this.setState({ email: event.target.value })
+  }
+
+  handleSubmit(event) {
+    event.preventDefault()
+    let { email } = this.state
+
+    this.setState({ state: 'sending' })
+
+    fetch(SIGN_UP_URL, {
+      method: 'POST',
+      body: JSON.stringify({ email })
+    }).then(res => {
+      this.setState({ state: 'subscribed', email: '' })
+    }).catch(err => {
+      this.setState({ state: 'error' })
+      console.error('error sending fetch', err)
+    })
+  }
+
   render() {
+
+    let copy = ''
+
+    switch(this.state.state) {
+      case 'initial':
+      case 'sending':
+        copy = `Sign Up to stay up to date in\nFrontEnd and JavaScript world`
+        break
+      case 'subscribed':
+        copy = `Thanks for signing up for newsletters`
+        break
+      case 'error':
+        copy = `There was some unexpected error. Try to refresh page and submit again`
+        break
+    }
 
     return (
       <FormContainer>
         <CTAText>
-          Sign Up to stay up to date in 
-          FrontEnd and JavaScript world
+          {copy}
         </CTAText>
-        <Form>
-          <Input placeholder={'your@email.com'} />
-          <Button>Sign Up</Button>
+        <Form onSubmit={this.handleSubmit}>
+          <Input value={this.state.email} onChange={this.handleInputChange} placeholder={'your@email.com'} />
+          <LoadableButton loading={this.state.state === 'sending'}>Sign Up</LoadableButton>
         </Form>
-        
       </FormContainer>
     )
   }
