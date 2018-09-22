@@ -34,4 +34,8 @@ jobs:
         name: Run "imaginary" tests
         command: yarn test
 
+      - run:
+        name: Build and deploy to GitHub Pages
+        command: yarn deploy
+
 
