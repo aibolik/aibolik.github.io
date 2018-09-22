@@ -1,7 +1,7 @@
 require('dotenv').config()
 const config = require('./data/SiteConfig')
 const urljoin = require('url-join')
-
+ 
 const { CONTENTFUL_SPACE_ID: spaceId, CONTENTFUL_DELIVERY_TOKEN: accessToken } = process.env
 
 if (!spaceId || !accessToken) {
