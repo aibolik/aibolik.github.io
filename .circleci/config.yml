@@ -21,8 +21,8 @@ jobs:
           - v1-dependencies-
 
       - run: 
-        name: "Install dependencies"
-        command: yarn install
+          name: "Install dependencies"
+          command: yarn install
 
       - save_cache:
           paths:
@@ -31,11 +31,11 @@ jobs:
         
       # run tests!
       - run: 
-        name: "Run 'imaginary' tests"
-        command: yarn test
+          name: "Run 'imaginary' tests"
+          command: yarn test
 
       - run:
-        name: "Build and deploy to GitHub Pages"
-        command: yarn deploy
+          name: "Build and deploy to GitHub Pages"
+          command: yarn deploy
 
 
