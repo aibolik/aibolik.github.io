@@ -5,15 +5,14 @@
 version: 2
 jobs:
   build:
+    branches:
+      ignore:
+        - master
+
     docker:
       - image: circleci/node:8.10
 
     working_directory: ~/aibolik.github.io
-
-    branches:
-        only:
-            - "master-v3"
-
 
     steps:
       - checkout
