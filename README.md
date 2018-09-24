@@ -44,7 +44,7 @@ The list of features I want to have to be ready to replace current website:
 - [x] About page
 - [x] Sign Up form for Newsletters
 - [x] Google Analytics - need to check on prod
-- [ ] CI integration(CirlceCI or other) to deploy to GitHub pages
+- [x] CI integration(CirlceCI or other) to deploy to GitHub pages
 - [x] SiteMap
 
 Other features those are not critical for release:
