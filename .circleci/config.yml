@@ -10,6 +10,11 @@ jobs:
 
     working_directory: ~/aibolik.github.io
 
+    branches:
+      only:
+        - master-v3
+
+
     steps:
       - checkout
 
