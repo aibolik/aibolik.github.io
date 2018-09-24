@@ -8,7 +8,7 @@ const AboutPage = () => (
   <section>
     <Hero
       heroImage={HeroImage}
-      title={'About me!!!'}
+      title={'About me'}
       excerpt={'Here you can find out more about me: who I am, what I do, what I love, what I am passionate about'}
     />
     <StyledContent>
