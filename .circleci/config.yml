@@ -33,9 +33,13 @@ jobs:
       - run: 
           name: "Run 'imaginary' tests"
           command: yarn test
+    
+      - run:
+          name: "Build Gatsby website"
+          command: yarn build
 
       - run:
-          name: "Build and deploy to GitHub Pages"
+          name: "Deploy to GitHub Pages"
           command: yarn deploy
 
 
