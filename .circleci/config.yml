@@ -12,7 +12,7 @@ jobs:
 
     branches:
         only:
-            - master-v3
+            - "master-v3"
 
 
     steps:
