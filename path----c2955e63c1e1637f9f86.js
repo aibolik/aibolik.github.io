@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{124:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Aibol Kussain - Personal WebSite and Blog"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----c2955e63c1e1637f9f86.js.map
