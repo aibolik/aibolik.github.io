@@ -32,9 +32,13 @@
       "component---src-layouts-index-js-2841d987604698e14b7b.js",
       "component---src-layouts-index-js-2841d987604698e14b7b.js.map"
     ],
+    "path---blog-create-your-own-virtual-dom-to-understand-it-part-1": [
+      "path---blog-create-your-own-virtual-dom-to-understand-it-part-1-3fc68cbc5a61d04f578c.js",
+      "path---blog-create-your-own-virtual-dom-to-understand-it-part-1-3fc68cbc5a61d04f578c.js.map"
+    ],
     "path---index": [
-      "path---index-dcacee9c53f2942a02da.js",
-      "path---index-dcacee9c53f2942a02da.js.map"
+      "path---index-2e8472079cde96f2529d.js",
+      "path---index-2e8472079cde96f2529d.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -55,9 +59,9 @@
       "path---blog-udacity-android-course-recap-f16f59bf96b34b01f126.js.map"
     ],
     "app": [
-      "app-16865e70de83d28b219b.js",
+      "app-735aced4b2350be23baa.js",
       "build-js-styles.css",
-      "app-16865e70de83d28b219b.js.map",
+      "app-735aced4b2350be23baa.js.map",
       "build-js-styles.css.map"
     ],
     "path---blog-how-i-handled-my-own-android-course": [
