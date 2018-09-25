@@ -2,6 +2,8 @@
 
 # My personal website v3
 
+[![CircleCI](https://circleci.com/gh/aibolik/aibolik.github.io/tree/master-v3.svg?style=svg)](https://circleci.com/gh/aibolik/aibolik.github.io/tree/master-v3)
+
 > Active development is in progress
 
 This is my third iteration of personal website. Under the hood I use [GatsbyJS](https://www.gatsbyjs.org/), [ReactJS](https://reactjs.org/) and [Contentful](https://contenful.com) for API based Content Management System. 

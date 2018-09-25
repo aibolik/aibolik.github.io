@@ -54,6 +54,10 @@ export const StyledContent = styled.section`
       text-decoration: underline;
     }
   }
+
+  strong {
+    font-weight: 600;
+  }
 `
 
 const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
