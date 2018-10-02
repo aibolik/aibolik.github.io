@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "path---blog-test-content-and-embeds": [
+      "path---blog-test-content-and-embeds-9d957ff57124efe6c4dd.js",
+      "path---blog-test-content-and-embeds-9d957ff57124efe6c4dd.js.map"
+    ],
     "path---blog-first-hackathon-in-our-alma-mater": [
       "path---blog-first-hackathon-in-our-alma-mater-2e0f22ec2661f288df6f.js",
       "path---blog-first-hackathon-in-our-alma-mater-2e0f22ec2661f288df6f.js.map"
@@ -37,8 +41,8 @@
       "path---blog-create-your-own-virtual-dom-to-understand-it-part-1-3fc68cbc5a61d04f578c.js.map"
     ],
     "path---index": [
-      "path---index-65643f631fb9461ae4f3.js",
-      "path---index-65643f631fb9461ae4f3.js.map"
+      "path---index-58acd82317a2f0a22070.js",
+      "path---index-58acd82317a2f0a22070.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -59,9 +63,9 @@
       "path---blog-udacity-android-course-recap-f16f59bf96b34b01f126.js.map"
     ],
     "app": [
-      "app-360eb1d12cd1078bb03d.js",
+      "app-7382ca76f3c3de2ef162.js",
       "build-js-styles.css",
-      "app-360eb1d12cd1078bb03d.js.map",
+      "app-7382ca76f3c3de2ef162.js.map",
       "build-js-styles.css.map"
     ],
     "path---blog-how-i-handled-my-own-android-course": [
