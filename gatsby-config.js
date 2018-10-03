@@ -2,7 +2,23 @@ require('dotenv').config()
 const config = require('./data/SiteConfig')
 const urljoin = require('url-join')
  
-const { CONTENTFUL_SPACE_ID: spaceId, CONTENTFUL_DELIVERY_TOKEN: accessToken } = process.env
+const { 
+  CONTENTFUL_SPACE_ID: spaceId, 
+  CONTENTFUL_DELIVERY_TOKEN: deliveryToken,
+  CONTENTFUL_PREVIEW_TOKEN: previewToken,
+  NODE_ENV
+} = process.env
+
+let accessToken
+let contentfulHost
+
+if (NODE_ENV === 'development') {
+  accessToken = previewToken
+  contentfulHost = 'preview.contentful.com'
+} else {
+  accessToken = deliveryToken
+  contentfulHost = 'cdn.contentful.com'
+}
 
 if (!spaceId || !accessToken) {
   throw new Error(
@@ -10,7 +26,11 @@ if (!spaceId || !accessToken) {
   )
 }
 
-let contentfulConfig = { spaceId, accessToken }
+let contentfulConfig = { 
+  spaceId, 
+  accessToken,
+  host: contentfulHost
+}
 
 module.exports = {
   siteMetadata: {
