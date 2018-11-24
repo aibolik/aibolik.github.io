@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import styled, { ThemeProvider, injectGlobal } from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import normalize from 'styled-normalize'
 import { media } from '../helpers/style-helper'
 import Navigation from '../components/Navigation'
@@ -10,7 +11,7 @@ import Footer from '../components/Footer'
 import 'typeface-roboto-slab'
 import 'typeface-merriweather'
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   body {
@@ -52,26 +53,42 @@ const ContentContainer = styled.main`
 `
 
 const Layout = ({ children, data }) => (
-  <ThemeProvider theme={theme}>
-    <div>
-    <Container>
-      <Helmet
-        title={data.site.siteMetadata.title}
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-      />
-      
-        <Navigation />
-        <ContentContainer>
-          {children()}
-          <SignUpForm />
-          <Footer />
-        </ContentContainer>
-    </Container>
-    </div>
-  </ThemeProvider>
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <div>
+          <Container>
+            <Helmet
+              title={data.site.siteMetadata.title}
+              meta={[
+                { name: 'description', content: 'Sample' },
+                { name: 'keywords', content: 'sample, something' },
+              ]}
+            />
+            
+              <Navigation />
+              <ContentContainer>
+                {children}
+                <SignUpForm />
+                <Footer />
+              </ContentContainer>
+          </Container>
+          </div>
+        </ThemeProvider>
+      </>
+    )}
+    />
 )
 
 Layout.propTypes = {
@@ -79,13 +96,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

@@ -97,10 +97,6 @@ const PageExcerpt = styled.p`
   `}
 `
 
-const Time = styled.time`
-
-`
-
 const Hero = ({ heroImage, title, excerpt, publishDate }) => (
   <HeroContainer>
     <ImageContainer>

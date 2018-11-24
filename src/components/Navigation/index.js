@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Avatar from '../Avatar'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import { media } from '../../helpers/style-helper'
 
 const Nav = styled.nav`
@@ -160,7 +160,7 @@ class Navigation extends Component {
             <span></span>
           </NavigationClose>
           <Sections open={this.state.open}>
-            <LinkItem to='/' exact>Blog</LinkItem>
+            <LinkItem to='/'>Blog</LinkItem>
             {/* <LinkItem to='/newsletters'>Newsletters</LinkItem> */}
             {/* <LinkItem to='/projects'>Projects</LinkItem> */}
             {/* <LinkItem to='/courses'>Courses</LinkItem> */}
