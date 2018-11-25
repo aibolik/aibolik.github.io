@@ -16,7 +16,7 @@ const AboutPage = () => (
         <p>I am Aibol and I am 22 years old JavaScript developer. My motherland is Kazakhstan, but currently I live and work in Belarus, Minsk.</p>
         <p>I consider myself as a JavaScript developer with <em>strong(enough)</em> knowledge in FrontEnd. Love everything related to JavaScript, and I use it on FrontEnd(ReactJS) and BackeEnd(NodeJS). </p>
         <p>Previously, I worked as an Android Developer and also taught it while I was studying in University. In school I was olympiad student participating on different programming contests(ACM). In my opinion, that gave me strong foundation in Software Engineering world, however, I did not like ACM that much, since it was hard to see immediate results like website or application. Therefore, I am not in FrontEnd world :)</p>
-        <p>I love learning new stuff and sharing what I learnt, so feel free to follow <a href="https://aibolik.github.io" target="_blank">my tech blog</a>. I am always open for new connections and ready to help where I can. To get in touch with me, just tweet me at <a href="https://twitter.com/aibolik_" target="_blank">@aibolik_</a>.</p>
+        <p>I love learning new stuff and sharing what I learnt, so feel free to follow <a href="https://aibolik.github.io" target="_blank" rel="noopener noreferrer">my tech blog</a>. I am always open for new connections and ready to help where I can. To get in touch with me, just tweet me at <a href="https://twitter.com/aibolik_" target="_blank" rel="noopener noreferrer">@aibolik_</a>.</p>
       </StyledContent>
     </section>
   </Layout>

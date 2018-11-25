@@ -99,6 +99,9 @@ class SignUp extends Component {
       case 'error':
         copy = `There was some unexpected error. Try to refresh page and submit again`
         break
+      default:
+        copy = `Sign Up to stay up to date in\nFrontEnd and JavaScript world`
+        break
     }
 
     return (

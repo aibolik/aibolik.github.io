@@ -16,11 +16,15 @@ const Figure = styled.figure`
   }
 `
 
-const ImageEmbed = ({ image, caption }) => (
+const ImageEmbed = ({ image, caption, alt }) => (
   <Figure>
-    <img src={image.resolutions.src} srcSet={image.resolutions.srcSet} />
+    <img src={image.resolutions.src} srcSet={image.resolutions.srcSet} alt={alt} />
     {caption && <figcaption>{caption}</figcaption>}
   </Figure>
 )
+
+ImageEmbed.defaultProps = {
+  alt: ''
+}
 
 export default ImageEmbed

@@ -25,6 +25,7 @@
     "styled-normalize": "^8.0.0",
     "typeface-merriweather": "^0.0.54",
     "typeface-roboto-slab": "^0.0.54",
+    "typeface-source-sans-pro": "^0.0.54",
     "url-join": "^4.0.0"
   },
   "keywords": [

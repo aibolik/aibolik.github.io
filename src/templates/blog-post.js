@@ -72,12 +72,18 @@ const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
       />
       <StyledContent>
         {post.content.map(contentItem => {
+          let content;
           switch(contentItem.__typename) {
             case 'ContentfulBlogPostCopy':
-              return <div dangerouslySetInnerHTML={{ __html: contentItem.copy.childMarkdownRemark.html }} />
+              content = <div dangerouslySetInnerHTML={{ __html: contentItem.copy.childMarkdownRemark.html }} />
+              break
             case 'ContentfulBlogPostImage':
-              return <ImageEmbed image={contentItem.image} caption={contentItem.caption} />
-          }        
+              content = <ImageEmbed image={contentItem.image} caption={contentItem.caption} />
+              break
+            default:
+              content = 'Content type is missing? Please say about it to twitter.com/aibolik_ :)'
+          }
+          return content        
         })}
       </StyledContent>
     </article>
