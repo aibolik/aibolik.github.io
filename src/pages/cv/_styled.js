@@ -21,6 +21,10 @@ export const LayoutContainer = styled.section`
 
   color: ${colors.text};
   font-family: 'Source Sans Pro', Georgia, Arial;
+
+  @media print {
+    padding-top: 0;
+  }
 `
 
 
@@ -34,6 +38,12 @@ export const Section = styled.section`
   &:not(:first-of-type) {
     margin-top: 44px;
   }
+
+  @media print {
+    &:not(:first-of-type) {
+      margin-top: 32px;
+    } 
+  }
 `
 
 export const List = styled.ul`
@@ -45,6 +55,10 @@ export const TitleHeading = styled.h1`
   margin-bottom: 0;
 
   font-size: 3em;
+
+  @media print {
+    margin-top: 0;
+  }
 `
 
 export const LinksList = styled.ul`
