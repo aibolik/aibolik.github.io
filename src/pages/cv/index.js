@@ -14,7 +14,7 @@ import {
   CoursesList,
   BulletedList,
   List
-} from './styled'
+} from './_styled'
 import 'typeface-source-sans-pro'
 
 const CvPage = () => (
