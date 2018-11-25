@@ -1,9 +1,11 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Hero from '../components/Hero'
 import ImageEmbed from '../components/ImageEmbed'
 import HeroImage from '../assets/hero.jpg'
 import styled from 'styled-components'
 import { media } from '../helpers/style-helper'
+import Layout from '../components/layout'
 import 'prismjs/themes/prism-tomorrow.css'
 
 // Temporarily
@@ -61,23 +63,31 @@ export const StyledContent = styled.section`
 `
 
 const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
-  <article>
-    <Hero 
-      heroImage={HeroImage}
-      title={post.title}
-      publishDate={post.publishDate}
-    />
-    <StyledContent>
-      {post.content.map(contentItem => {
-        switch(contentItem.__typename) {
-          case 'ContentfulBlogPostCopy':
-            return <div dangerouslySetInnerHTML={{ __html: contentItem.copy.childMarkdownRemark.html }} />
-          case 'ContentfulBlogPostImage':
-            return <ImageEmbed image={contentItem.image} caption={contentItem.caption} />
-        }        
-      })}
-    </StyledContent>
-  </article>
+  <Layout>
+    <article>
+      <Hero 
+        heroImage={HeroImage}
+        title={post.title}
+        publishDate={post.publishDate}
+      />
+      <StyledContent>
+        {post.content.map(contentItem => {
+          let content;
+          switch(contentItem.__typename) {
+            case 'ContentfulBlogPostCopy':
+              content = <div dangerouslySetInnerHTML={{ __html: contentItem.copy.childMarkdownRemark.html }} />
+              break
+            case 'ContentfulBlogPostImage':
+              content = <ImageEmbed image={contentItem.image} caption={contentItem.caption} />
+              break
+            default:
+              content = 'Content type is missing? Please say about it to twitter.com/aibolik_ :)'
+          }
+          return content        
+        })}
+      </StyledContent>
+    </article>
+  </Layout>
 )
 
 export default BlogPost
