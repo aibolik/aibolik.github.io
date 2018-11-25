@@ -45,11 +45,13 @@ const CvPage = () => (
             </Section>
             <Section>
               <SectionHeading>Work Experience</SectionHeading>
-              <SubHead>EPAM Systems | September, 2017 - now</SubHead>
+              <SubHead><Anchor href='https://epam.com'>EPAM Systems</Anchor> | September, 2017 - Present</SubHead>
               <MetaInfo>Senior Software Engineer</MetaInfo>
               <List>
                 <li>
                   <strong>Internal project of EPAM Systems:</strong>
+                  <br />
+                  <MetaInfo>One of many internal projects of company that aims to provide better tool for researchers to organize and navigate in new findings they dicsover.</MetaInfo>
                   <br />
                   <br />
                   <List withDisc>
@@ -61,22 +63,26 @@ const CvPage = () => (
                 </li>
                 <li>
                   <br />
-                  <strong>CBS Interactive:</strong>
+                  <strong><Anchor href='https://cbsnews.com'>CBS News division</Anchor> of CBS Interactive:</strong>
+                  <br />
+                  <MetaInfo><Anchor href='https://cbsnews.com'>CBS News</Anchor> is news divison of CBS Corporation with more than 1m visitors/month, aimed to provide insustry-leading content across a variety of platforms to audience around the world.</MetaInfo>
                   <br />
                   <br />
                   <List withDisc>
                     <li>Worked on performance and build optimizations of News portal with more than 1 million visitors/month</li>
                     <li>Worked on integration of new features with 3rd party platforms and resolving issues on CBS News website</li>
                     <li>Worked on redesign of content and main pages of web application</li>
-                    <li>Took active part and be responsible for delivering new product of CBS News on Chromecast platform</li>
+                    <li>Took active part and was responsible for delivering new product of <Anchor href='https://store.google.com/us/product/chromecast_apps?hl=en-US'>CBS News on Chromecast</Anchor> platform</li>
                     <li>Participated on development of Tizen application of CBS News for Samsung TV</li>
                     <li><em>Technologies used: RiotJS, Gulp, Webpack, PHP Symfony, Twig, Tizen, Chromecast CAF</em></li>
                   </List>
                 </li>
               </List>
 
-              <SubHead>Knowedges | April, 2017 - August, 2017</SubHead>
+              <SubHead><Anchor href='https://knowedges.org'>Knowedges</Anchor> | April, 2017 - August, 2017</SubHead>
               <MetaInfo>Frontend Developer</MetaInfo>
+              <br />
+              <MetaInfo><Anchor href='https://knowedges.org'>Knowedges</Anchor> is a social network that includes MOOC that gives opportunity to enhance your skills in different areas and share your experience. </MetaInfo>
               <List withDisc>
                 <li>Took part in designing and implementing architecture of web application</li>
                 <li>Implemented complex modules of application</li>
@@ -84,7 +90,7 @@ const CvPage = () => (
                 <li><em>Technologies used: ReactJS, Redux, Webpack, ESLint, i18next, and more...</em></li>
               </List>
 
-              <SubHead>Mars Studio | April, 2016 - December, 2016</SubHead>
+              <SubHead><Anchor href='https://mars.studio/'>Mars Studio</Anchor> | April, 2016 - December, 2016</SubHead>
               <MetaInfo>Android Developer</MetaInfo>
               <List withDisc>
                 <li>Successfully finished 2 projects: Android application for <Anchor href='https://play.google.com/store/apps/details?id=kz.mtender.mtender'>MTender(more than 10k installs)</Anchor> and <Anchor href='http://onebutton.kz/'>OneButton</Anchor></li>
@@ -147,6 +153,8 @@ const CvPage = () => (
                 <li>JavaScript</li>
                 <li>ReactJS</li>
                 <li>Redux</li>
+                <li>TDD</li>
+                <li>Jest/Enzyme</li>
                 <li>NodeJS</li>
                 <li>ExpressJS/KoaJS</li>
                 <li>GraphQL</li>
