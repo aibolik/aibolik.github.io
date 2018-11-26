@@ -1,6 +1,9 @@
 require('dotenv').config()
 const path = require('path')
 
+const { NODE_ENV } = process.env
+const buildHidden = NODE_ENV === 'development'
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -31,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         const posts = result.data.allContentfulBlogPost.edges
 
-        posts.filter(edge => edge.node.hidden === false).forEach(({ node: { slug }}) => {
+        posts.filter(edge => edge.node.hidden === false || buildHidden === true).forEach(({ node: { slug }}) => {
           createPage({
             path: `/blog/${slug}`,
             component: blogPost,
