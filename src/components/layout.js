@@ -23,6 +23,8 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   background: `#4A4F69`,
   foreground: `rgba(33, 33, 33, .77)`,
+  codeBackground: `rgba(255,229,100,.2)`,
+  codeColor: `#4a4a4a`,
   lightText: `#FFF`,
   secondaryLight: `rgba(255, 255, 255, .8)`
 };
@@ -30,7 +32,7 @@ const theme = {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  
+
   ${media.tablet`
     flex-direction: row;
   `}
@@ -38,7 +40,7 @@ const Container = styled.div`
 
 const ContentContainer = styled.main`
   color: ${props => props.theme.foreground};
-  
+
   ${media.tablet`
     position: relative;
     left: 280px;
@@ -76,7 +78,7 @@ const Layout = ({ children, data }) => (
                 { name: 'keywords', content: 'sample, something' },
               ]}
             />
-            
+
               <Navigation />
               <ContentContainer>
                 {children}

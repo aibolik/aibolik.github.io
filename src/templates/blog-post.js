@@ -20,11 +20,18 @@ export const StyledContent = styled.section`
     font-size: .8em;
   }
 
+  *:not(pre) > code[class*="language-"] {
+    ${props => `
+      background: ${props.theme.codeBackground};
+      color: ${props.theme.codeColor};
+    `}
+  }
+
   blockquote {
     margin: 1em 40px 1em 1em;
     padding-left: 1em;
     border-left: 4px solid rgba(33, 33, 33, .77);
-    
+
     font-style: italic;
   }
 
@@ -65,7 +72,7 @@ export const StyledContent = styled.section`
 const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
   <Layout>
     <article>
-      <Hero 
+      <Hero
         heroImage={HeroImage}
         title={post.title}
         publishDate={post.publishDate}
@@ -83,7 +90,7 @@ const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
             default:
               content = 'Content type is missing? Please say about it to twitter.com/aibolik_ :)'
           }
-          return content        
+          return content
         })}
       </StyledContent>
     </article>
