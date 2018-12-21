@@ -40,8 +40,8 @@ const CvPage = () => (
         <Content>
           <main>
             <Section>
-              <SectionHeading>Motivation</SectionHeading>
-              <p>I am a FrontEnd Engineer with solid knowledge of NodeJS. Previously, I worked as an Android Developer, but then I switched to Web, and since that time advancing my knowledge in this sphere. I always strive to be on edge of technologies in this fast evolving sphere. I try to be proactive in developers community and share my learnings through my blog or mentoring programs. I am happy to join company that supports employees in professional growth and evaluates skills worthily.</p>
+              <SectionHeading>Summary</SectionHeading>
+              <p>Software Engineer with strong knowledge in FrontEnd technologies backed by JavaScript frameworks as ReactJS and with a solid knowledge in NodeJS. </p>
             </Section>
             <Section>
               <SectionHeading>Work Experience</SectionHeading>
@@ -56,8 +56,7 @@ const CvPage = () => (
                   <br />
                   <List withDisc>
                     <li>Worked on delivering new product using React-Redux + NodeJS application</li>
-                    <li>Lead the development team of 2 key developers</li>
-                    <li>Provided mentoring sessions for mentees</li>
+                    <li>Led the development team of 2 key developers and provided mentoring sessions for them</li>
                     <li><em>Technologies used: ReactJS, Redux, Webpack, ESLint, Jest, Enzyme, NodeJS, PostgreSQL, Sequelize ORM, Microsoft Azure</em></li>
                   </List>
                 </li>
@@ -69,9 +68,9 @@ const CvPage = () => (
                   <br />
                   <br />
                   <List withDisc>
-                    <li>Worked on performance and build optimizations of News portal with more than 1 million visitors/month</li>
-                    <li>Worked on integration of new features with 3rd party platforms and resolving issues on CBS News website</li>
-                    <li>Worked on redesign of content and main pages of web application</li>
+                    <li>Optimized build configuration of assets on cbsnews.com that decreased build time of web application and led to better DX</li>
+                    <li>Delivered key features on the website those increased engagement of visitors on video assets</li>
+                    <li>Actively worked on redesign and rearchitecture of front door and article pages of cbsnews.com</li>
                     <li>Took active part and was responsible for delivering new product of <Anchor href='https://store.google.com/us/product/chromecast_apps?hl=en-US'>CBS News on Chromecast</Anchor> platform</li>
                     <li>Participated on development of Tizen application of CBS News for Samsung TV</li>
                     <li><em>Technologies used: RiotJS, Gulp, Webpack, PHP Symfony, Twig, Tizen, Chromecast CAF</em></li>
@@ -134,7 +133,6 @@ const CvPage = () => (
                 <li>Database Management Systems</li>
                 <li>Machine Learning</li>
               </CoursesList>
-              
               <SubHead>ULSAN</SubHead>
               <MetaInfo>2014, 2nd fall by exchange | South Korea, Ulsan</MetaInfo>
               <p>Computer Science</p>
