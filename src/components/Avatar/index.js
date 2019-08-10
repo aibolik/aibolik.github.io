@@ -36,7 +36,7 @@ const Avatar = props => (
     <Img src={MyAvatar} />
     <InfoContainer>
       <Name>Aibol Kussain</Name>
-      <Description>Developer, Tech blogger</Description>
+      <Description>Developer, Casual Tech blogger</Description>
       <Follow username='aibolik_' />
     </InfoContainer>
   </Header>

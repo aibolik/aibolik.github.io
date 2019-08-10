@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "Aibol Kussain | Developer, Tech blogger", // Site title.
+  siteTitle: "Aibol Kussain | Developer, Casual Tech blogger", // Site title.
   siteTitleShort: "AK WebSite", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Aibol Kussain | Personal Website ", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
@@ -7,7 +7,7 @@ module.exports = {
   siteDescription: "Website and blog of Aibo Kussain | Web Developer", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   // siteFBAppID: "", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-96757849-4", // GA tracking ID. 
+  googleAnalyticsID: "UA-96757849-4", // GA tracking ID.
   // TODO: setup disqus
   disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // Disqus shortname.
   // TODO: setup categories for posts

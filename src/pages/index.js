@@ -2,7 +2,7 @@ import React from 'react'
 import { Link as GatsbyLink, graphql } from 'gatsby'
 import BlogPreview from '../components/BlogPreview'
 import Hero from '../components/Hero'
-import HeroImage from '../assets/hero.jpg'
+import HeroImage from '../assets/hero.png'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 
@@ -56,7 +56,7 @@ export const pageQuery = graphql`
                 childMarkdownRemark {
                   excerpt(pruneLength: 250)
                 }
-              } 
+              }
             }
           }
         }

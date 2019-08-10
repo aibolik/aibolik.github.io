@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import HeroImage from '../assets/hero.jpg'
+import HeroImage from '../assets/hero.png'
 import Layout from '../components/layout'
 import { StyledContent } from '../templates/blog-post'
 
