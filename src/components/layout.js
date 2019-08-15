@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import normalize from 'styled-normalize'
 import { media } from '../helpers/style-helper'
@@ -54,44 +54,42 @@ const ContentContainer = styled.main`
   `}
 `
 
-const Layout = ({ children, data }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children }) => {
+  const { site } = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={data => (
-      <>
-        <GlobalStyle />
-        <ThemeProvider theme={theme}>
-          <div>
-          <Container>
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' },
-              ]}
-            />
+    }
+  `);
 
-              <Navigation />
-              <ContentContainer>
-                {children}
-                <SignUpForm />
-                <Footer />
-              </ContentContainer>
-          </Container>
-          </div>
-        </ThemeProvider>
-      </>
-    )}
-    />
-)
+  return (
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <div>
+        <Container>
+          <Helmet
+            title={site.siteMetadata.title}
+            meta={[
+              { name: 'description', content: 'Sample' },
+              { name: 'keywords', content: 'sample, something' },
+            ]}
+          />
+          <Navigation />
+          <ContentContainer>
+            {children}
+            <SignUpForm />
+            <Footer />
+          </ContentContainer>
+        </Container>
+        </div>
+      </ThemeProvider>
+    </>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,

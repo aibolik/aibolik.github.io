@@ -27,8 +27,7 @@ const IndexPage = ({ data }) => (
         {
           data.allContentfulBlogPost.edges.map(({ node }) => (
             <Link to={`/blog/${node.slug}`} key={node.id}><BlogPreview {...node} /></Link>
-          )
-          )
+          ))
         }
       </PostsContainer>
     </section>
