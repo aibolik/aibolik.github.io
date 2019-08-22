@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { media } from '../../helpers/style-helper';
 
 const Btn = styled.button`
   box-sizing: border-box;
   height: 42px;
-  padding: 0 16px;
+  padding: 0 8px;
   border-radius: 4px;
   border: none;
 
@@ -13,6 +14,10 @@ const Btn = styled.button`
   background: linear-gradient(to right, rgba(74,79,105,1) 0%,rgba(73,84,142,1) 30%,rgba(74,120,141,1) 100%);
 
   cursor: pointer;
+
+  ${media.tablet`
+    padding: 0 16px;
+  `}
 `
 
 const Button = ({ children }) => (
@@ -47,14 +52,14 @@ const LoadableBtn = styled(Btn)`
       position: absolute;
       left: calc(50% - 10px);
       top: calc(50% - 10px);
-      
+
       width: 10px;
       height: 10px;
       border: 4px solid;
       border-left-color: transparent;
       border-radius: 50%;
 
-      opacity: 1;      
+      opacity: 1;
       animation: rotate 1s linear infinite;
     }
   }

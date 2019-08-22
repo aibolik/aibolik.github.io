@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Avatar from '../Avatar'
-import { Link } from 'gatsby'
+import NavigationLink from '../NavigationLink';
 import { media } from '../../helpers/style-helper'
 
 const Nav = styled.nav`
@@ -11,7 +11,7 @@ const Nav = styled.nav`
   ${media.tablet`
     position: fixed;
     top: 0;
-    
+
     height: 100vh;
     width: 280px;
 
@@ -57,7 +57,7 @@ const NavigationClose = styled.button.attrs({
     border-radius: 6px;
     transition: all .3s;
   }
-              
+
   &.close > span {
     &:first-child {
       position: relative;
@@ -100,39 +100,10 @@ const Sections = styled.ul.attrs({
 
   ${media.tablet`
     height: auto;
-  `}  
-`
-
-const LinkItem = styled(Link).attrs({
-  activeClassName: 'active'
-})`
-  display: block;
-  width: calc(100% - 40px);
-  padding: 12px 0;
-  color: ${props => props.theme.secondaryLight};
-  text-decoration: none;
-  order: 2;
-
-  &.active {
-    color: ${props => props.theme.lightText};
-    font-weight: 400;
-    order: 1;
-
-    ${media.tablet`
-      background: rgba(255, 255, 255, .15);
-      margin-left: -16px;
-      margin-right: -16px;
-      padding-left: 16px;
-    `}
-  }
-
-  ${media.tablet`
-    width: auto;
-    order: 1;  
   `}
-`
- 
-class Navigation extends Component { 
+`;
+
+class Navigation extends Component {
   constructor(props) {
     super(props)
 
@@ -160,11 +131,11 @@ class Navigation extends Component {
             <span></span>
           </NavigationClose>
           <Sections open={this.state.open}>
-            <LinkItem to='/'>Blog</LinkItem>
-            {/* <LinkItem to='/newsletters'>Newsletters</LinkItem> */}
-            {/* <LinkItem to='/projects'>Projects</LinkItem> */}
-            {/* <LinkItem to='/courses'>Courses</LinkItem> */}
-            <LinkItem to='/about'>About</LinkItem>
+            <NavigationLink to='/'>Blog</NavigationLink>
+            {/* <NavigationLink to='/newsletters'>Newsletters</NavigationLink> */}
+            {/* <NavigationLink to='/projects'>Projects</NavigationLink> */}
+            <NavigationLink to='/courses'>Courses</NavigationLink>
+            <NavigationLink to='/about'>About</NavigationLink>
           </Sections>
         </NavigationContainer>
       </Nav>

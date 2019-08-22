@@ -39,6 +39,9 @@ const Container = styled.div`
 `
 
 const ContentContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: ${props => props.theme.foreground};
 
   ${media.tablet`
@@ -54,7 +57,7 @@ const ContentContainer = styled.main`
   `}
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, includeNewsletterSignUp }) => {
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -81,7 +84,7 @@ const Layout = ({ children }) => {
           <Navigation />
           <ContentContainer>
             {children}
-            <SignUpForm />
+            {includeNewsletterSignUp && <SignUpForm />}
             <Footer />
           </ContentContainer>
         </Container>
@@ -93,6 +96,10 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.func,
+}
+
+Layout.defaultProps = {
+  includeNewsletterSignUp: true,
 }
 
 export default Layout
