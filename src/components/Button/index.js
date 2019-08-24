@@ -74,8 +74,8 @@ const LoadableBtn = styled(Btn)`
   }
 `
 
-export const LoadableButton = ({ children, loading }) => (
-  <LoadableBtn className={loading ? 'loading' : ''}>
+export const LoadableButton = ({ children, loading, ...otherProps }) => (
+  <LoadableBtn className={loading ? 'loading' : ''} {...otherProps}>
     <span>{children}</span>
   </LoadableBtn>
 )

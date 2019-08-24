@@ -42,6 +42,10 @@ export const MainText = styled.h3`
 export const SmallText = styled.p`
   margin: 0;
   text-align: center;
+
+  strong {
+    font-weight: 700;
+  }
 `
 
 export const Input = styled.input`
