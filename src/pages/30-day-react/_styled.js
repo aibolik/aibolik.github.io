@@ -5,6 +5,10 @@ import 'typeface-montserrat';
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
 
+  html {
+    font-size: 14px;
+  }
+
   body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
