@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { space, layout } from 'styled-system';
 
-import Text from '../../Text';
-import Box from '../../Box';
+import Text from '../../../../Text';
+import Box from '../../../../Box';
 
 const Img = styled.img`
   width: 100%;

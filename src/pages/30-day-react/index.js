@@ -11,7 +11,7 @@ import {
   CTAContainer,
 } from './_styled';
 import Button from '../../components/PromoButton';
-import TOC from '../../components/TableOfContents';
+import TOC from '../../components/pages/30-day-react/TableOfContents';
 
 import HeroLogo from './assets/web-developer.svg';
 import ReactLogo from './assets/react-logo.svg';

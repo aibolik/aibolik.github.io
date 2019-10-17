@@ -1,6 +1,6 @@
 import React from 'react';
-import Text from '../Text';
-import Box from '../Box';
+import Text from '../../../Text';
+import Box from '../../../Box';
 
 import Lesson from './Lesson';
 
