@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { space, typography } from 'styled-system';
 
 const AbstractText = styled.div`
+  line-height: 1.4;
   ${space}
   ${typography}
 `;

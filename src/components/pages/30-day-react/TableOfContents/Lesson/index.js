@@ -23,7 +23,7 @@ const Title = ({ children }) => (
 );
 
 const Description = ({ children }) => (
-  <Text as="p" m={0} mb={2} fontWeight="400" lineHeight={1.4}>{children}</Text>
+  <Text as="p" m={0} mb={2}>{children}</Text>
 );
 
 const Image = ({ src, ...props }) => (

@@ -25,6 +25,7 @@ const TOC = () => {
             </Box>
           </Lesson>
         ))}
+        <Text fontWeight="400" fontSize="1.2em" fontStyle="italic" textAlign="center">More coming soon...</Text>
       </div>
     </Box>
   );

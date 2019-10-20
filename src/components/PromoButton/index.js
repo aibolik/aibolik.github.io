@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import { space, layout, border, color, typography } from 'styled-system';
 
 const Button = styled.button`
-  padding: 6px 16px;
+  padding: 8px 16px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, .24);
   border-radius: 8px;
+  text-decoration: none;
 
   ${space}
   ${layout}
