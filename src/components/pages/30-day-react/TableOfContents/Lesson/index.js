@@ -19,20 +19,20 @@ const Tag = styled.div`
 `;
 
 const Title = ({ children }) => (
-  <Text as="p" m={0} fontWeight="600" my={2} fontSize="1.2em">{children}</Text>
+  <Text as="p" m={0} fontWeight="600" mt={2} mb={3} fontSize="1.2em">{children}</Text>
 );
 
 const Description = ({ children }) => (
-  <Text as="p" m={0} mb={2}>{children}</Text>
+  <Text as="p" m={0} mb={3} pr={3}>{children}</Text>
 );
 
 const Image = ({ src, ...props }) => (
   <Img src={src} {...props} />
 );
 
-const Lesson = ({ children }) => {
+const Lesson = ({ children, ...props }) => {
   return (
-    <Box mb={4}>{children}</Box>
+    <Box mb={4} {...props}>{children}</Box>
   );
 }
 

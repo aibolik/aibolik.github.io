@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   body {

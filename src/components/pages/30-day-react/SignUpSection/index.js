@@ -49,7 +49,7 @@ const SignUp = () => {
   }, [shouldSignUp]);
 
   return (
-    <Box px={3} mb={4} as="section" id="sign-up">
+    <Box px={3} mb={4} ml={[0, 'auto']} mr={[0, 'auto']} as="section" id="sign-up" maxWidth={['auto', '480px']} textAlign={['left', 'center']}>
       <Text as="h4" fontSize="18px" mb={2}>Early Sign Up</Text>
       <Text mb={3}>
         {`Sign Up for <30-day-React /> course now, and get `}

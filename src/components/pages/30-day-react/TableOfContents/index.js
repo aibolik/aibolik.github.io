@@ -14,14 +14,18 @@ const TOC = () => {
 
       <div>
         {content.map((lesson, i) => (
-          <Lesson key={i}>
-            <Lesson.Image src={lesson.image} />
-            <Lesson.Title>{lesson.title}</Lesson.Title>
-            <Lesson.Description>{lesson.description}</Lesson.Description>
-            <Box display="flex">
-              {lesson.tags.map((tag, i) => (
-                <Lesson.Tag key={`tag-${i}`}>{tag}</Lesson.Tag>
-              ))}
+          <Lesson key={i} display={['block', 'flex']}>
+            <Box order={[1, 2]} flex={['none', 0.3]}>
+              <Lesson.Image src={lesson.image} />
+            </Box>
+            <Box order={[2, 1]} flex={['none', 0.7]}>
+              <Lesson.Title>{lesson.title}</Lesson.Title>
+              <Lesson.Description>{lesson.description}</Lesson.Description>
+              <Box display="flex">
+                {lesson.tags.map((tag, i) => (
+                  <Lesson.Tag key={`tag-${i}`}>{tag}</Lesson.Tag>
+                ))}
+              </Box>
             </Box>
           </Lesson>
         ))}

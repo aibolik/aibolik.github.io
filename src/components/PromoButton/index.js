@@ -8,6 +8,7 @@ const Button = styled.button`
   border: 1px solid rgba(0, 0, 0, .24);
   border-radius: 8px;
   text-decoration: none;
+  text-align: center;
 
   ${space}
   ${layout}
