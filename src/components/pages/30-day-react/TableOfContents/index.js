@@ -20,7 +20,7 @@ const TOC = () => {
             </Box>
             <Box order={[2, 1]} flex={['none', 0.7]}>
               <Lesson.Title>{lesson.title}</Lesson.Title>
-              <Lesson.Description>{lesson.description}</Lesson.Description>
+              <Lesson.Description dangerouslySetInnerHTML={{ __html: lesson.description }} />
               <Box display="flex">
                 {lesson.tags.map((tag, i) => (
                   <Lesson.Tag key={`tag-${i}`}>{tag}</Lesson.Tag>

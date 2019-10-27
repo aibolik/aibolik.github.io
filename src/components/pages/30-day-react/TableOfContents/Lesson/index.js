@@ -22,8 +22,8 @@ const Title = ({ children }) => (
   <Text as="p" m={0} fontWeight="600" mt={2} mb={3} fontSize="1.2em">{children}</Text>
 );
 
-const Description = ({ children }) => (
-  <Text as="p" m={0} mb={3} pr={3}>{children}</Text>
+const Description = ({ ...props }) => (
+  <Text as="p" m={0} mb={3} pr={3} {...props} />
 );
 
 const Image = ({ src, ...props }) => (
@@ -32,7 +32,7 @@ const Image = ({ src, ...props }) => (
 
 const Lesson = ({ children, ...props }) => {
   return (
-    <Box mb={4} {...props}>{children}</Box>
+    <Box pt={3} mb={4} {...props}>{children}</Box>
   );
 }
 
