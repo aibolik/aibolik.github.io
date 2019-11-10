@@ -18,7 +18,6 @@ const Landing = () => {
       <Header />
       <HeroSection />
       <TOC />
-      <SignUpSection />
       <Footer />
     </>
   );
