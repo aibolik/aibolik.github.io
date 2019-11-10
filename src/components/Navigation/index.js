@@ -11,7 +11,7 @@ const Nav = styled.nav`
   ${media.tablet`
     position: fixed;
     top: 0;
-    
+
     height: 100vh;
     width: 280px;
 
@@ -57,7 +57,7 @@ const NavigationClose = styled.button.attrs({
     border-radius: 6px;
     transition: all .3s;
   }
-              
+
   &.close > span {
     &:first-child {
       position: relative;
@@ -100,7 +100,7 @@ const Sections = styled.ul.attrs({
 
   ${media.tablet`
     height: auto;
-  `}  
+  `}
 `
 
 const LinkItem = styled(Link).attrs({
@@ -128,11 +128,11 @@ const LinkItem = styled(Link).attrs({
 
   ${media.tablet`
     width: auto;
-    order: 1;  
+    order: 1;
   `}
 `
- 
-class Navigation extends Component { 
+
+class Navigation extends Component {
   constructor(props) {
     super(props)
 
@@ -161,6 +161,7 @@ class Navigation extends Component {
           </NavigationClose>
           <Sections open={this.state.open}>
             <LinkItem to='/'>Blog</LinkItem>
+            <LinkItem to='/30-day-react'>30-day-React</LinkItem>
             {/* <LinkItem to='/newsletters'>Newsletters</LinkItem> */}
             {/* <LinkItem to='/projects'>Projects</LinkItem> */}
             {/* <LinkItem to='/courses'>Courses</LinkItem> */}
