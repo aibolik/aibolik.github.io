@@ -29,7 +29,8 @@
     "typeface-montserrat": "^0.0.75",
     "typeface-roboto-slab": "^0.0.54",
     "typeface-source-sans-pro": "^0.0.54",
-    "url-join": "^4.0.0"
+    "url-join": "^4.0.0",
+    "dotenv": "^6.0.0"
   },
   "keywords": [
     "gatsby"
@@ -43,7 +44,6 @@
     "test": "echo \"Error: no test specified, just pass it\""
   },
   "devDependencies": {
-    "dotenv": "^6.0.0",
     "gh-pages": "^2.0.0",
     "prettier": "^1.13.7"
   },
