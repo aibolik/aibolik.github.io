@@ -48,6 +48,6 @@ jobs:
 
       - run:
           name: "Deploy to GitHub Pages"
-          command: yarn deploy
+          command: yarn global add gh-pages && gh-pages -b master -d public -u "Aibol Kussain <aibolikdev@gmail.com>"
 
 

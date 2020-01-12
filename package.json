@@ -6,6 +6,7 @@
   "dependencies": {
     "@reach/dialog": "^0.5.4",
     "babel-plugin-styled-components": "^1.8.0",
+    "dotenv": "^6.0.0",
     "gatsby": "^2.0.55",
     "gatsby-plugin-google-analytics": "^2.0.7",
     "gatsby-plugin-react-helmet": "^3.0.2",
@@ -29,8 +30,7 @@
     "typeface-montserrat": "^0.0.75",
     "typeface-roboto-slab": "^0.0.54",
     "typeface-source-sans-pro": "^0.0.54",
-    "url-join": "^4.0.0",
-    "dotenv": "^6.0.0"
+    "url-join": "^4.0.0"
   },
   "keywords": [
     "gatsby"
@@ -40,11 +40,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gh-pages -b master -d public -u \"Aibol Kussain <aibolikdev@gmail.com>\"",
     "test": "echo \"Error: no test specified, just pass it\""
   },
   "devDependencies": {
-    "gh-pages": "^2.0.0",
     "prettier": "^1.13.7"
   },
   "repository": {
