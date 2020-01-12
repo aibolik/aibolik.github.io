@@ -4,7 +4,7 @@ module.exports = {
   siteTitleAlt: "Aibol Kussain | Personal Website ", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://aibolik.github.io", // Domain of your website without pathPrefix.
-  siteDescription: "Website and blog of Aibo Kussain | Web Developer", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Website and blog of Aibol Kussain | Web Developer", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   // siteFBAppID: "", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96757849-4", // GA tracking ID.
