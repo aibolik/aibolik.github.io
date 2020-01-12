@@ -2,10 +2,12 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Hero from '../components/Hero'
 import ImageEmbed from '../components/ImageEmbed'
+import CodeSandboxEmbed from '../components/CodeSandboxEmbed'
 import HeroImage from '../assets/hero.png'
 import styled from 'styled-components'
 import { media } from '../helpers/style-helper'
 import Layout from '../components/layout'
+import CourseSignUp from '../components/CourseSignUp'
 import 'prismjs/themes/prism-tomorrow.css'
 
 // Temporarily
@@ -70,7 +72,7 @@ export const StyledContent = styled.section`
 `
 
 const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
-  <Layout>
+  <Layout hideNewsletterSignUp={post.showNewsletterPromotion === false}>
     <article>
       <Hero
         heroImage={HeroImage}
@@ -82,16 +84,22 @@ const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
           let content;
           switch(contentItem.__typename) {
             case 'ContentfulBlogPostCopy':
-              content = <div dangerouslySetInnerHTML={{ __html: contentItem.copy.childMarkdownRemark.html }} />
+              content = <div key={contentItem.id} dangerouslySetInnerHTML={{ __html: contentItem.copy.childMarkdownRemark.html }} />
               break
             case 'ContentfulBlogPostImage':
-              content = <ImageEmbed image={contentItem.image} caption={contentItem.caption} />
+              content = <ImageEmbed key={contentItem.id} image={contentItem.image} caption={contentItem.caption} />
+              break
+            case 'ContentfulBlogPostEmbedCodeSandbox':
+              content = <CodeSandboxEmbed key={contentItem.id} embedUrl={contentItem.embedUrl} title={contentItem.title} />;
               break
             default:
               content = 'Content type is missing? Please say about it to twitter.com/aibolik_ :)'
           }
           return content
         })}
+        {post.show30dayReactPromotion && <CourseSignUp caption={
+          <em>Sign up now and get the course <strong>"30-day-React"</strong><br />for <strong>free</strong> when it is released</em>
+        } />}
       </StyledContent>
     </article>
   </Layout>
@@ -104,6 +112,8 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       slug
+      showNewsletterPromotion
+      show30dayReactPromotion
       publishDate(formatString: "x")
       content {
         __typename
@@ -124,6 +134,11 @@ export const pageQuery = graphql`
               srcSet
             }
           }
+        }
+        ... on ContentfulBlogPostEmbedCodeSandbox {
+          id
+          title
+          embedUrl
         }
       }
     }

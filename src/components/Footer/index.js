@@ -21,12 +21,14 @@ const Copyright = styled.p`
 `
 
 const IconLink = styled.a`
-  display: inline-block;
+  display: flex;
   height: 40px;
   vertical-align: middle;
+  align-items: center;
 `
 
 const SocialIcons = styled.div`
+  display: flex;
   svg {
     fill: ${props => props.theme.lightText};
     opacity: .52;
@@ -41,17 +43,17 @@ const SocialIcons = styled.div`
     ${media.tablet`
       height: auto;
       margin-left: 35px;
-    `}    
+    `}
   }
 `
 
 const Footer = (props) => (
   <FooterContainer>
-    <Copyright>&copy; 2018 Aibol Kussain</Copyright>
+    <Copyright>&copy; {new Date().getFullYear()} Aibol Kussain</Copyright>
     <SocialIcons>
-      <IconLink href='#'><FacebookIcon /></IconLink>
-      <IconLink href='#'><GithubIcon /></IconLink>
-      <IconLink href='#'><Twitter /></IconLink>
+      <IconLink href='https://www.facebook.com/aib0lik' target="_blank"><FacebookIcon /></IconLink>
+      <IconLink href='https://github.com/aibolik' target="_blank"><GithubIcon /></IconLink>
+      <IconLink href='https://twitter.com/aibolik_' target="_blank"><Twitter /></IconLink>
     </SocialIcons>
   </FooterContainer>
 )

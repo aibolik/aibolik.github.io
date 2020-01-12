@@ -54,7 +54,7 @@ const ContentContainer = styled.main`
   `}
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hideNewsletterSignUp }) => {
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
           <Navigation />
           <ContentContainer>
             {children}
-            <SignUpForm />
+            {!hideNewsletterSignUp && <SignUpForm />}
             <Footer />
           </ContentContainer>
         </Container>
@@ -91,8 +91,13 @@ const Layout = ({ children }) => {
   )
 }
 
+Layout.defaultProps = {
+  hideNewsletterSignUp: false,
+};
+
 Layout.propTypes = {
   children: PropTypes.func,
+  hideNewsletterSignUp: PropTypes.bool,
 }
 
 export default Layout
