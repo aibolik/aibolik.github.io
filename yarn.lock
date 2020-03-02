@@ -5840,12 +5840,12 @@ gatsby-plugin-sitemap@^1.2.25:
     minimatch "^3.0.4"
     sitemap "^1.12.0"
 
-gatsby-plugin-styled-components@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.0.3.tgz#bda731fad14ac070b17000aea4c8714cba1cd84b"
-  integrity sha512-7XMgvfZHf6duVjo90GrdqumqZEXarh04cCPz9mc5ep8lS8wLfzirXRybfE+8uOdnlSigDIXnf64Lx2hy/IxT0g==
+gatsby-plugin-styled-components@^3.1.19:
+  version "3.1.19"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.19.tgz#6251e2c872a7f48d93dca0868ac534e761fc6b89"
+  integrity sha512-ME4NSuFe6zzF/PqEoLRt6Xo7su484zwByOsQtQDK4U+X62tXgl+DfsW6Dz1p1k258OeN+uqJERQDaFlfWhfaAw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.7.6"
 
 gatsby-react-router-scroll@^2.1.22:
   version "2.1.22"
