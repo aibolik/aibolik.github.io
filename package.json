@@ -17,7 +17,7 @@
     "gatsby-source-contentful": "^2.1.86",
     "gatsby-transformer-remark": "^2.1.12",
     "moment": "^2.22.2",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.23.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
