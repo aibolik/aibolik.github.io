@@ -25,6 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Current `NODE_ENV`
+        run: echo $NODE_ENV
+
+
       # Runs a single command using the runners shell
       - name: Install dependencies
         run: yarn install
