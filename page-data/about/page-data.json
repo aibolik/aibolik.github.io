@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-about-js","path":"/about/","webpackCompilationHash":"0fe41f605bbd9246129a","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{
+    "componentChunkName": "component---src-pages-about-js",
+    "path": "/about/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3649515864"]}

@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-30-day-react-index-js","path":"/30-day-react/","webpackCompilationHash":"0fe41f605bbd9246129a","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{
+    "componentChunkName": "component---src-pages-30-day-react-index-js",
+    "path": "/30-day-react/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": []}
