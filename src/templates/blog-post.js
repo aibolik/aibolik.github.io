@@ -73,6 +73,9 @@ export const StyledContent = styled.section`
 
 const BlogPost = ({ data: { contentfulBlogPost: post } }) => (
   <Layout hideNewsletterSignUp={post.showNewsletterPromotion === false}>
+    <Helmet>
+      <link rel="canonical" href={`https://aibolik.com/blog/${post.slug}`} />
+    </Helmet>
     <article>
       <Hero
         heroImage={HeroImage}
