@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Hero from '../components/Hero'
+import Helmet from 'react-helmet'
 import ImageEmbed from '../components/ImageEmbed'
 import CodeSandboxEmbed from '../components/CodeSandboxEmbed'
 import HeroImage from '../assets/hero.png'
